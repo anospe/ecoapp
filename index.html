@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoApp - Meio Ambiente e Saúde</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EcoApp</h1>
+        <p>Conscientização sobre Meio Ambiente e Saúde</p>
+    </header>
+    <nav>
+        <button onclick="showSection('home')">Início</button>
+        <button onclick="showSection('descarte')">Descarte de Eletrônicos</button>
+        <button onclick="showSection('dicas')">Dicas de Energia</button>
+        <button onclick="showSection('quiz')">Quiz</button>
+        <button onclick="showSection('campanhas')">Campanhas</button>
+    </nav>
+    <main>
+        <section id="home" class="active">
+            <h2>Bem-vindo ao EcoApp!</h2>
+            <p>Aprenda como proteger o meio ambiente e melhorar sua saúde com práticas sustentáveis.</p>
+        </section>
+        <section id="descarte" class="hidden">
+            <h2>Descarte de Eletrônicos</h2>
+            <p>Encontre o ponto de coleta para resíduos eletrônicos próximo ao Jardim Aricanduva - São Paulo - Capital:</p>
+            <ul>
+                <li>Eco Ponto da Vila Dalila - Rua Inácio da Costa, nº. 740, esquina com a Avenida Aricanduva - Vila Dalila - São Paulo - SP (Segunda à Sãbado das 06 às 22hs e Domingo/Feriado das 06 às 18hs)</li>
+                <li>Eco Ponto Vila Talarico - Avenida Bernardino Brito Fonseca de Carvalho, nº. 1050 - São Paulo - SP (Segunda à Sãbado das 06 às 22hs e Domingo/Feriado das 06 às 18hs)</li>
+            </ul>
+        </section>
+        <section id="dicas" class="hidden">
+            <h2>Dicas de Economia de Energia</h2>
+            <p>Adote estas práticas para reduzir o consumo de energia:</p>
+            <ul>
+                <li>Desligue dispositivos em standby.</li>
+                <li>Use lâmpadas LED.</li>
+                <li>Evite carregar dispositivos durante a noite toda.</li>
+                <li>Ajuste a temperatura do ar-condicionado para 23-24º.C e use a função "Timer" para desligar, automaticamente, à noite.</li>
+            </ul>
+        </section>
+        <section id="quiz" class="hidden">
+            <h2>Quiz sobre Saúde Ambiental</h2>
+            <p id="pergunta"></p>
+            <button onclick="responder('correta')">Verdadeiro</button>
+            <button onclick="responder('incorreta')">Falso</button>
+            <p id="resultado"></p>
+        </section>
+        <section id="campanhas" class="hidden">
+            <h2>Campanhas Locais</h2>
+            <p>Participe das seguintes iniciativas na sua comunidade:</p>
+            <ul>
+                <li>Mutirão de Coleta de Resíduos Eletrônicos - 15/05/2025, Praça do Jardim Aricanduva, Avenida Governador Adhemar Pereira de Barros, próximo ao nº 30, Jardim Aricanduva, São Paulo, SP (9h às 15h)</li>
+                <li>Oficina de Reciclagem - 20/05/2025</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
